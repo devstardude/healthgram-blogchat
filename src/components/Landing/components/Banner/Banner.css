@@ -1,0 +1,9 @@
+.Banner {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("./../../../../assets/images/banner.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  overflow-x: hidden;
+}

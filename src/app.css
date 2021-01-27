@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
+body,h1,h2{
+    font-family: 'Mulish', sans-serif!important;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+h3{
+    font-weight: 300;
+}
+.Center{
+    text-align: center;
+}
+.Left{
+    text-align: left;
+}
+.Color{
+    background-color: #00000018;
+}
+.Link{
+    color: rgb(2, 85, 100)!important
+}

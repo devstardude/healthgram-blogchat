@@ -1,0 +1,67 @@
+.MainPage {
+  overflow: hidden;
+}
+
+.MainDiv {
+  height: 120vh;
+}
+.SecondaryDiv {
+  height: 100%;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.MainIcons {
+  color: rgb(19, 48, 48);
+}
+.MainPageLeftLinks {
+  border-right: 2px solid black;
+}
+
+.MainPosts {
+  overflow-y: auto;
+  height: 100%;
+}
+
+
+.MainPosts::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.MainPosts::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.MainPosts::-webkit-scrollbar-thumb {
+  background: #1cb2fd;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.MainPosts::-webkit-scrollbar-thumb:hover {
+  background: #0683d0;
+}
+.MainPosts::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+.MainPosts::-webkit-scrollbar-track {
+  background: #ededed;
+  border: 0px none #ffffff;
+  border-radius: 1px;
+}
+.MainPosts::-webkit-scrollbar-track:hover {
+  background: #e8e8e8;
+}
+.MainPosts::-webkit-scrollbar-track:active {
+  background: #e0e0e0;
+}
+.MainPosts::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
