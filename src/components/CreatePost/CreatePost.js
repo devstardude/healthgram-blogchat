@@ -37,7 +37,7 @@ const CreatePost = (props) => {
       photoURL,
     });
     setSubmitting(false);
-    // resetForm();
+    resetForm();
   };
   return (
     <div>
@@ -68,7 +68,7 @@ const CreatePost = (props) => {
             route: Yup.string()
               .oneOf(["global", "room1", "room2", "room3","room4","room5"])
               .required("Required"),
-            // file: Yup.mixed().required("Please upload a file"),
+            file: Yup.mixed().required("Please upload a file"),
           })}
           onSubmit={dataSubmitHandler}
         >
