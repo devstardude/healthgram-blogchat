@@ -15,9 +15,19 @@ h3{
 .Left{
     text-align: left;
 }
+.Right{
+    text-align: right;
+}
 .Color{
     background-color: #00000018;
 }
 .Link{
     color: rgb(2, 85, 100)!important
+}
+
+.SocialMediaLinks{
+    color:rgb(54, 54, 54)!important;
+}
+.SocialMediaLinks:hover{
+    color:rgb(0, 0, 0)!important;
 }

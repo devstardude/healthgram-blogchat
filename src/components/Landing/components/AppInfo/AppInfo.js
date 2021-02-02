@@ -1,7 +1,7 @@
 import React from "react";
 import PicOne from "../../../../assets/images/pic01.jpg";
 import PicTwo from "../../../../assets/images/pic002.jpg";
-import RoundImage from "../../../shared/RoundImage";
+import RoundImage from "../../../shared//RoundImage/RoundImage";
 import StripContainer from "../StripContainer/StripContainer";
 //import'./AppInfo.css';
 
@@ -33,10 +33,10 @@ const AppInfo = (props) => {
         </div>
       </StripContainer>
       <StripContainer bgColor="#67cbfd">
-        <div className="col-md-4 col-12 Center p-md-5 order-2 ">
+        <div className="col-md-4 col-12 Center p-md-5 order-md-2 ">
           <RoundImage url={PicTwo} size="18" />
         </div>
-        <div className="col-md-8 col-12 p-md-5 order-1">
+        <div className="col-md-8 col-12 p-md-5 order-md-1">
           <div className="py-4">
             <h3>See Health Related Post From All Around The World.</h3>
             <p className="mt-4">

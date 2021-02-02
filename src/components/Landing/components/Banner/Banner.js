@@ -5,7 +5,7 @@ import "./Banner.css";
 const Banner = (props) => {
   return (
     <div>
-      <div class="jumbotron d-flex align-items-center Banner mb-5">
+      <div className="jumbotron d-flex align-items-center Banner mb-5">
         <div className="container-fluid Center m-0 p-0">
           <div className="row">
             <div className="col-md-6 col-12">

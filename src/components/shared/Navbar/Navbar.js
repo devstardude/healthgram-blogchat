@@ -12,7 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import firebase from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
-import * as db from "../../firebase/config";
+import * as db from "../../../firebase/config";
 const auth = firebase.auth();
 
 function HideOnScroll(props) {
@@ -92,9 +92,18 @@ const Navbar = (props) => {
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <Button style={{ color: "white" }} edge="end">
-                    Login
+                    Get Started
                   </Button>
                 </Link>
+                <Link
+                  to="/create"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <Button style={{ color: "white" }} edge="end">
+                    Create
+                  </Button>
+                </Link>
+
                 {user && (
                   <Link
                     to="/"

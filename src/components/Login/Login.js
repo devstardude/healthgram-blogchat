@@ -4,7 +4,7 @@ import { Link, Redirect } from "react-router-dom";
 import * as db from "../../firebase/config";
 import { useAuthState } from "react-firebase-hooks/auth";
 import firebase from "firebase/app";
-import JumbotronTop from "../shared/JumbotronTop";
+import JumbotronTop from "../shared/JumbotronTop/JumbotronTop";
 
 const auth = firebase.auth();
 const jumbo = {
@@ -15,7 +15,7 @@ const jumbo = {
 const Login = (props) => {
   const [user] = useAuthState(auth);
   if (user) {
-    return <Redirect to="/mainpage" />;
+    return <Redirect to="/mainpage/global" />;
   } else {
     return (
       <div>
@@ -28,7 +28,7 @@ const Login = (props) => {
             <div className="card-header">Let's Go</div>
             <div className="card-body">
               <h5 className="card-title">Login With Google</h5>
-              <p className="card-text">
+              <p className="card-text" style={{color:"black"}}>
                 Only your Email, Username and Display Picture will be used.
                 <br /> We respect your Privacy.
               </p>

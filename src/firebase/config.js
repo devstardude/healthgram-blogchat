@@ -4,7 +4,7 @@ import "firebase/firestore";
 import "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBEJECXq1vt1xhhh2qHDVV9ZWU69EuXrNI",
+  apiKey: process.env.REACT_APP_FIREBASE_API,
   authDomain: "healthgram-blogchat.firebaseapp.com",
   projectId: "healthgram-blogchat",
   storageBucket: "healthgram-blogchat.appspot.com",
@@ -15,7 +15,6 @@ const firebaseConfig = {
 const firebaseApp = !firebase.apps.length
   ? firebase.initializeApp(firebaseConfig)
   : firebase.app();
-const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 const storage = firebaseApp.storage();
 
@@ -32,4 +31,23 @@ export function checkAuth(cb) {
 
 export async function logOut() {
   await auth.signOut();
+}
+
+export async function uploadImage(uid,file) {
+  const id = uid;
+  const uploadTask = storage.ref(`images/${file.name}-${id}`).put(file);
+  return new Promise((resolve, reject) => {
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => console.log("image uploading", snapshot),
+      reject,
+      () => {
+        storage
+          .ref("images")
+          .child(`${file.name}-${id}`)
+          .getDownloadURL()
+          .then(resolve);
+      }
+    );
+  });
 }

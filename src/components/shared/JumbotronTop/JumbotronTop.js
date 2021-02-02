@@ -6,7 +6,7 @@ const JumbotronTop = (props) => {
   return (
     <div>
       <div
-        class="jumbotron d-flex align-items-center LoginBanner"
+        className="jumbotron d-flex align-items-center LoginBanner"
         style={{ height: `${props.jumboHeight}vh`}}
       >
         <div className="container-fluid mx-5 px-5">
