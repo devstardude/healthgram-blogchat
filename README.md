@@ -1,10 +1,8 @@
 # Healthgram - Blog and Chat App.
 An app that promotes mental Health and Wellbeing.
-See Live Project on : [Healthgram]()
+See Live Project on : [Healthgram](https://healthgram-blogchat.web.app/)
 
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://healthgram-blogchat.web.app/).
 
 ## Available Scripts
 
